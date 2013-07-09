@@ -25,15 +25,23 @@
   height: 30%;
   bottom: 0%;
   left: 40%;
-  border: solid black;
+  -moz-transition: -moz-transform 2s;
+  -webkit-transition: -webkit-transform 2s;
+  -o-transition:-o-transform 2s;
+  transition: transform 2s;
 }
 
-.egg {
+#egg-gun:hover {
+  -webkit-transform: scale(3, 0.3);
+  -o-transform: scale(3, 0.3);
+  transform: scale(3, 0.3);
+}
+
+#egg {
   background: white;
-  width: 5%;
-  height: 5%;
-  bottom: 30%;
-  left: 47.5%;
-  border: solid black;
+  width: 10%;
+  height: 10%;
+  bottom: 20%;
+  left: 45%;
   border-radius: 50%;
 }
