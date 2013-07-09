@@ -1,8 +1,39 @@
-body {
-    background: #fafafa;
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; position: absolute; }
+
+#container {
+  background: darkTurquoise;
+  position:fixed !important;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
 }
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
+#troll {
+  background: red;
+  width: 30%;
+  height: 30%;
+  top: 0%;
+  left: 35%;
+  border: solid black;
+}
+
+#egg-gun {
+  background: blue;
+  width: 20%;
+  height: 30%;
+  bottom: 0%;
+  left: 40%;
+  border: solid black;
+}
+
+.egg {
+  background: white;
+  width: 5%;
+  height: 5%;
+  bottom: 30%;
+  left: 47.5%;
+  border: solid black;
+  border-radius: 50%;
 }
