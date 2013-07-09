@@ -1,8 +1,71 @@
-body {
-    background: #fafafa;
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; position: absolute; }
+
+#container {
+  background: darkTurquoise;
+  position:fixed !important;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
 }
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
+#troll {
+  background: red;
+  width: 30%;
+  height: 30%;
+  top: 0%;
+  left: 35%;
+  border: solid black;
+  -moz-transition: left 0.5s;
+  -webkit-transition: left 0.5s;
+  -o-transition: left 0.5s;
+  transition: left 0.5s;
+}
+
+#troll.dodging {
+  left: 10%;
+}
+
+#egg-gun {
+  background: blue;
+  width: 20%;
+  height: 30%;
+  bottom: 0%;
+  left: 40%;
+  -moz-transition: -moz-transform 2s;
+  -webkit-transition: -webkit-transform 2s;
+  -o-transition:-o-transform 2s;
+  transition: transform 2s;
+}
+
+#egg-gun.fired {
+  -webkit-transform: scale(3, 0.3);
+  -o-transform: scale(3, 0.3);
+  transform: scale(3, 0.3);
+}
+
+#egg {
+  background: white;
+  width: 10%;
+  height: 10%;
+  bottom: 20%;
+  left: 45%;
+  border-radius: 50%;
+  -moz-transition: bottom 2s linear;
+  -webkit-transition: bottom 2s linear;
+  -o-transition: bottom 2s linear;
+  transition: bottom 2s linear;
+}
+
+#egg.fired {
+  bottom: 90%;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
 }
